@@ -19,3 +19,8 @@ export class AppComponent {
     this.edadDos='';
   }
 }
+
+export class Usuario {
+  nombre='John';
+  clave=1234;
+}
