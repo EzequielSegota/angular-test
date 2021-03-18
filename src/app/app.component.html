@@ -1,13 +1,12 @@
 
-
-<h1>Hola Mundo con Angular!</h1>
+<h1>{{title}}</h1>
 
 <div>
-  <h3>Titulo:{{title}}</h3>
-  <input type="text" name="text-input" id="text-input" [(ngModel)]= "title"> 
+  Edad Uno:<input type="text" name="text-input" id="text-input" [(ngModel)]= "edadUno"> 
+  Edad Dos:<input type="text" name="text-input" id="text-input" [(ngModel)]= "edadDos"> 
   <br>
-  <button (click)=HacerCambios()>Cambiar algo</button>
+  <button (click)=CalcularPromedio()>Calcular Promedio</button>
+  <button (click)=LimpiarCuadros()>Limpiar Cuadros</button>
 </div>
-
-<footer>{{title}}</footer>
+<h1>Promedio:{{resultado}}</h1>
 <router-outlet></router-outlet>

@@ -6,10 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'test-project';
+  title = 'Ejercicio 01 con Angular';
+  edadUno='';
+  edadDos='';
+  resultado=0;
+  CalcularPromedio(){
+    this.resultado=(parseInt(this.edadUno) + parseInt(this.edadDos))/2;
+  }
 
-  HacerCambios()
-  {
-    this.title = "cambio a angular 2021";
+  LimpiarCuadros(){
+    this.edadUno='';
+    this.edadDos='';
   }
 }
