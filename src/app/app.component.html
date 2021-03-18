@@ -4,8 +4,10 @@
 
 <div>
   <h3>Titulo:{{title}}</h3>
-  <input type="text" name="text-input" id="text-input">
+  <input type="text" name="text-input" id="text-input" [(ngModel)]= "title"> 
   <br>
-  <button>Cambiar algo</button>
+  <button (click)=HacerCambios()>Cambiar algo</button>
 </div>
+
+<footer>{{title}}</footer>
 <router-outlet></router-outlet>

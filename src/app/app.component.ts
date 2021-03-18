@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'test-project';
+
+  HacerCambios()
+  {
+    this.title = "cambio a angular 2021";
+  }
 }
